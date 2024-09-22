@@ -1,0 +1,139 @@
+/* animation: referencia abreviada para todas las propiedades de animación
+border: define el estilo, grosor y color del borde de un elemento.
+border-radius: define la curvatura de las esquinas de un borde.
+box-shadow: define una sombra alrededor de un elemento.
+cursor: define el tipo de cursor que se muestra cuando se coloca el cursor sobre un elemento.
+display: define cómo se muestra un elemento en la página (por ejemplo, como bloque o en línea).
+line-height: define la altura de línea del texto de un elemento.
+list-style: define la apariencia de los elementos de una lista (por ejemplo, si tienen viñetas o números).
+margin: define el espacio entre el borde de un elemento y otros elementos cercanos.
+opacity: define la opacidad de un elemento.
+overflow: define cómo se maneja el contenido de un elemento si es más grande que el espacio disponible.
+padding: define el espacio entre el borde y el contenido de un elemento.
+position: define cómo se posiciona un elemento en relación con otros elementos en la página. La veremos más adelante.
+transition: define la transición suave de un cambio en un elemento.
+visibility: define si un elemento es visible o no.
+z-index: define el orden de apilamiento de elementos superpuestos.
+grid-template-columns: define el número y tamaño de las columnas en una cuadrícula de diseño de rejilla.
+grid-template-rows: define el número y tamaño de las filas en una cuadrícula de diseño de rejilla. */
+
+img {
+    border-radius: 100px 100px 100px 100px;
+    animation: bounce 2s infinite;
+    margin-top: 40px;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+
+}
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+#sidebar{
+    position: fixed;
+    width: 200px;
+    height: 100%;
+    background: #1d1c0e;
+    left: -200px;
+    transition: all 400ms linear;
+}
+
+#sidebar.active{
+    left: 0;
+}
+
+#sidebar ul li {
+    color: white;
+    text-align: center;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.63);
+    padding: 15px 10px;
+    list-style: none;
+}
+
+.logo{
+    border-radius: 10%;
+    display: block;
+    margin: 0 auto;
+}
+
+#sidebar .toggle-btn{
+    position: absolute;
+    left: 230px;
+    top: 20px;
+    cursor: pointer;
+}
+
+#sidebar .toggle-btn span{
+    display: block;
+    width: 40px;
+    text-align: center;
+    font-size: 30px;
+    border: 1px solid black;
+}
+
+body {
+    background: linear-gradient(to left, rgb(175, 141, 30), rgb(0, 0, 0));
+    font-family: 'Trebuchet MS';
+    color: rgba(255, 255, 255, 0.63);
+    text-align: center;
+}
+
+
+
+p {
+    font-size: 20px;
+    text-align: center;
+
+}
+
+
+ol {
+    text-align: center;
+}
+
+button {
+    background-color: burlywood;
+    text-decoration: underline;
+    text-align: center;
+}
+
+button:hover {
+    color: lightseagreen;
+    background-color: lightsalmon;
+    transform: scale(1.05);
+}
+
+button:active {
+    background-color: rgb(172, 230, 118);
+    color: wheat;
+}
+
+
+.registro-form{
+    width: 38%;
+    background-color: rgb(15, 19, 26);
+    padding: 5%;
+    margin: auto;
+    margin-top: 100px;
+    border-radius: 40px;
+    font-family: 'calibri';
+    color: whitesmoke;
+}
+
+.registro-form h3{
+    font-size: 22px;
+    margin-bottom: 20px;
+}
+
+.iframe{
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.albums{
+    display: flex;
+    justify-content: space-around;
+}
